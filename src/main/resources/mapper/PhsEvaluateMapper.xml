@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.phs.hospital.core.dal.dao.PhsEvaluateDao">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.phs.hospital.core.dal.domain.PhsEvaluate">
+                    <id column="evaluate_id" property="evaluateId"/>
+                    <result column="evaluate_docnum" property="evaluateDocnum"/>
+                    <result column="evaluate_docscore" property="evaluateDocscore"/>
+                    <result column="evaluate_doccontent" property="evaluateDoccontent"/>
+                    <result column="evaluate_secnum" property="evaluateSecnum"/>
+                    <result column="evaluate_secscore" property="evaluateSecscore"/>
+                    <result column="evaluate_seccontent" property="evaluateSeccontent"/>
+                    <result column="evaluate_time" property="evaluateTime"/>
+                    <result column="reserve1" property="reserve1"/>
+                    <result column="reserve2" property="reserve2"/>
+                    <result column="reserve3" property="reserve3"/>
+                    <result column="reserve4" property="reserve4"/>
+        </resultMap>
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+       evaluate_id,evaluate_docnum,evaluate_docscore,evaluate_doccontent,evaluate_secnum,evaluate_secscore,evaluate_seccontent,evaluate_time,reserve1,reserve2,reserve3,reserve4
+        </sql>
+</mapper>

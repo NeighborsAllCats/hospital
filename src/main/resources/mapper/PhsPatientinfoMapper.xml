@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.phs.hospital.core.dal.dao.PhsPatientinfoDao">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.phs.hospital.core.dal.domain.PhsPatientinfo">
+                    <id column="patient_id" property="patientId"/>
+                    <result column="patient_name" property="patientName"/>
+                    <result column="sex" property="sex"/>
+                    <result column="age" property="age"/>
+                    <result column="identity" property="identity"/>
+                    <result column="cellphone_number" property="cellphoneNumber"/>
+                    <result column="password" property="password"/>
+                    <result column="height" property="height"/>
+                    <result column="weight" property="weight"/>
+                    <result column="sick_desc" property="sickDesc"/>
+                    <result column="section_num" property="sectionNum"/>
+                    <result column="local_time" property="localTime"/>
+                    <result column="doctor_num" property="doctorNum"/>
+                    <result column="reserve1" property="reserve1"/>
+                    <result column="reserve2" property="reserve2"/>
+                    <result column="reserve3" property="reserve3"/>
+                    <result column="reserve4" property="reserve4"/>
+        </resultMap>
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+       patient_id,patient_name,sex,age,identity,cellphone_number,password,height,weight,sick_desc,section_num,local_time,doctor_num,reserve1,reserve2,reserve3,reserve4
+        </sql>
+</mapper>

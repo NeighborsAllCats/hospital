@@ -12,13 +12,19 @@ import java.util.List;
 
 public class Generator {
 
-    public static final String LINK = "jdbc:mysql://127.0.0.1:3306/jaguar?useUnicode=true&characterEncoding=utf-8";
+    public static final String LINK = "jdbc:mysql://127.0.0.1:3306/phs?useUnicode=true&characterEncoding=utf-8";
     public static final String ACCOUNT = "root";
     public static final String PASSWORD = "123456";
 
     public static String[] tables = {
 
-            "User",
+            "phs_user",
+            "phs_section",
+            "phs_patientinfo",
+            "phs_fam_his",
+            "phs_evaluate",
+            "phs_doctorinfo",
+            "phs_appointment",
     };
 
     public static void main(String[] args) {

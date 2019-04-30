@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.phs.hospital.core.dal.dao.PhsUserDao">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.phs.hospital.core.dal.domain.PhsUser">
+                    <id column="user_id" property="userId"/>
+                    <result column="user_password" property="userPassword"/>
+                    <result column="user_permission" property="userPermission"/>
+                    <result column="reserve1" property="reserve1"/>
+                    <result column="reserve2" property="reserve2"/>
+        </resultMap>
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+       user_id,user_password,user_permission,reserve1,reserve2
+        </sql>
+</mapper>

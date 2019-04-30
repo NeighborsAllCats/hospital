@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.phs.hospital.core.dal.dao.PhsAppointmentDao">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.phs.hospital.core.dal.domain.PhsAppointment">
+                    <id column="appointment_id" property="appointmentId"/>
+                    <result column="appointment_patnum" property="appointmentPatnum"/>
+                    <result column="local_time" property="localTime"/>
+                    <result column="appointment_starttime" property="appointmentStarttime"/>
+                    <result column="appointment_docnum" property="appointmentDocnum"/>
+                    <result column="appointment_status" property="appointmentStatus"/>
+                    <result column="appointment_endtime" property="appointmentEndtime"/>
+                    <result column="reserve1" property="reserve1"/>
+                    <result column="reserve2" property="reserve2"/>
+                    <result column="reserve3" property="reserve3"/>
+                    <result column="reserve4" property="reserve4"/>
+        </resultMap>
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+       appointment_id,appointment_patnum,local_time,appointment_starttime,appointment_docnum,appointment_status,appointment_endtime,reserve1,reserve2,reserve3,reserve4
+        </sql>
+</mapper>
