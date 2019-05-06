@@ -24,31 +24,26 @@ public class PhsDoctorinfo extends BaseModel {
 
     private static final long serialVersionUID = 1L;
     /**
-     * 数据编号
-     */
-    @TableId(value = "doctor_id", type = IdType.AUTO)
-    private Integer doctorId;
-    /**
      * 医生编号
      */
-    @TableField("doctor_deptnum")
+    @TableId("doctor_deptnum")
     private Integer doctorDeptnum;
     /**
      * 医生姓名
      */
     @TableField("doctor_name")
     private String doctorName;
-    /**
-     * 账户密码
-     */
-    @TableField("doctor_password")
-    private String doctorPassword;
     private Integer sex;
     private Integer age;
     /**
      * 医生职位
      */
     private String position;
+    /**
+     * 账户密码
+     */
+    @TableField("doctor_password")
+    private String doctorPassword;
     /**
      * 科室编号
      */

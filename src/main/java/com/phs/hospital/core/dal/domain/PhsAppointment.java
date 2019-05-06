@@ -34,7 +34,7 @@ public class PhsAppointment extends BaseModel {
     @TableField("appointment_patnum")
     private Integer appointmentPatnum;
     /**
-     * 当前时间
+     * 预约当前时间
      */
     @TableField("local_time")
     private Date localTime;

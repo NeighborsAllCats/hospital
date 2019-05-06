@@ -4,8 +4,7 @@
 
         <!-- 通用查询映射结果 -->
         <resultMap id="BaseResultMap" type="com.phs.hospital.core.dal.domain.PhsFamHis">
-                <result column="id" property="id"/>
-                    <result column="sick_id" property="sickId"/>
+                    <id column="sick_id" property="sickId"/>
                     <result column="family_id" property="familyId"/>
                     <result column="family_relative" property="familyRelative"/>
                     <result column="family_name" property="familyName"/>

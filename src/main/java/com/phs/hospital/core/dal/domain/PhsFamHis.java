@@ -26,7 +26,7 @@ public class PhsFamHis extends BaseModel {
     /**
      * 病人id
      */
-    @TableField("sick_id")
+    @TableId("sick_id")
     private Integer sickId;
     /**
      * 成员编号

@@ -5,4 +5,5 @@ import com.phs.hospital.core.common.base.BaseManager;
 
 public interface PhsUserManager extends BaseManager<PhsUser> {
 
+
 }

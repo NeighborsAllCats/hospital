@@ -30,7 +30,7 @@ public class APIResult<T> implements Serializable {
     )
     private Long timestamp;
 
-    public static <T> APIResult<T> ok() {
+    public static <T> APIResult<T> ok(String data) {
         return (APIResult<T>) ok((Object) null);
     }
 

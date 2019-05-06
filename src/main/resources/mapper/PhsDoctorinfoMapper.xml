@@ -4,13 +4,12 @@
 
         <!-- 通用查询映射结果 -->
         <resultMap id="BaseResultMap" type="com.phs.hospital.core.dal.domain.PhsDoctorinfo">
-                    <id column="doctor_id" property="doctorId"/>
-                    <result column="doctor_deptnum" property="doctorDeptnum"/>
+                    <id column="doctor_deptnum" property="doctorDeptnum"/>
                     <result column="doctor_name" property="doctorName"/>
-                    <result column="doctor_password" property="doctorPassword"/>
                     <result column="sex" property="sex"/>
                     <result column="age" property="age"/>
                     <result column="position" property="position"/>
+                    <result column="doctor_password" property="doctorPassword"/>
                     <result column="section_number" property="sectionNumber"/>
                     <result column="work_time" property="workTime"/>
                     <result column="adept" property="adept"/>
@@ -24,6 +23,6 @@
         </resultMap>
         <!-- 通用查询结果列 -->
         <sql id="Base_Column_List">
-       doctor_id,doctor_deptnum,doctor_name,doctor_password,sex,age,position,section_number,work_time,adept,honor_desc,doctor_delete,doctor_notice,reserve1,reserve2,reserve3,reserve4
+       doctor_deptnum,doctor_name,sex,age,position,doctor_password,section_number,work_time,adept,honor_desc,doctor_delete,doctor_notice,reserve1,reserve2,reserve3,reserve4
         </sql>
 </mapper>
